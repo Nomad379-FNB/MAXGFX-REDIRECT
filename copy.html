@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url=https://aiso.dog/copy.html" />
+<title>AISOdog — Copy Portfolio</title>
+ <link rel="icon" type="image/x-icon" href="images/AISOdog-favicon.ico">
+
+
+<link rel="stylesheet" href="stylish.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://AISO.dog/#organization",
+  "name": "AISOdog",
+  "url": "https://AISO.dog",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://AISO.dog/images/AISOdog-dog-Logo-MenuW.png"
+  },
+  "description": "AISOdog is a boutique AI search optimization consultancy building content architecture and entity authority that earns citations from ChatGPT, Google AI Overviews, and Perplexity.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://AISO.dog/#max-loel",
+    "name": "Max Loel",
+    "jobTitle": "Search Strategist",
+    "url": "https://AISO.dog"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://AISO.dog/contact.html",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.reddit.com/user/AISOdog"
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<a href="index.html" class="menu-image" onclick="return myFunction()">
+<picture>
+  <!-- Desktop image-->
+	<source media="(min-width: 768px)" srcset="images/AISOdog-dog-Logo-White.png" class="menu-image" alt="AISOdog Logo">
+  <!-- Mobile image -->
+  <img src="images/AISOdog-dog-Logo-MenuW.png" class="menu-image" alt="Menu Logo">
+</picture></a>
+<ul id="myLinks">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+<p><a href="https://aiso.dog/"We've Moved!</a></p>
+<h1>Copy Portfolio</h1>
+<p style="text-align:center;">Filter or sort the table below to find examples of work from different topics, titles, and sources. All links open in new tabs.</p>
+
+<div class="filter-container">
+  <input type="text" id="tableFilter" placeholder="Search table…" oninput="applyFilter()">
+</div>
+
+<table id="copyTable">
+  <thead>
+    <tr>
+      <th data-key="topic">Topic</th>
+      <th data-key="title">Title</th>
+      <th data-key="website">Website</th>
+      <th data-key="url">Link</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+This website was made in Notepad and contains only this cookie: 🍪<br> <a href="privacy-policy.html">Privacy Policy:</a> I do not collect, store, share, or sell your personal information.<br>
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">View GitHub policies here.</a>
+</footer>
+
+<script>
+const copyData = [
+  {"topic":"App Review","title":"1sland App Store Spotlight","url":"https://www.gummicube.com/blog/1sland-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Astracraft App Store Spotlight","url":"https://www.gummicube.com/blog/astracraft-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Bomb Club App Store Spotlight","url":"https://www.gummicube.com/blog/bomb-club-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Clawberta App Store Spotlight","url":"https://www.gummicube.com/blog/clawberta-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Dice Merge App Store Spotlight","url":"https://www.gummicube.com/blog/dice-merge-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Eaze - App Store Spotlight","url":"https://www.gummicube.com/blog/eaze-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Egg Inc App Store Spotlight","url":"https://www.gummicube.com/blog/egg-inc-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Huntdown App Store Spotlight","url":"https://www.gummicube.com/blog/huntdown-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Lines on Sides - App Store Spotlight","url":"https://www.gummicube.com/blog/lines-on-sides-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Mega Man X DiVE App Store Spotlight","url":"https://www.gummicube.com/blog/mega-man-x-dive-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Mountain Project App Store Spotlight","url":"https://www.gummicube.com/blog/mountain-project-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Secret Neighbor App Store Spotlight","url":"https://www.gummicube.com/blog/secret-neighbor-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Solitaire Showtime App Store Spotlight","url":"https://www.gummicube.com/blog/solitaire-showtime-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"That Level Again App Store Spotlight","url":"https://www.gummicube.com/blog/that-level-again-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"The Battle of Polytopia App Store Spotlight","url":"https://www.gummicube.com/blog/battle-of-polytopia-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"The Wild Case App Store Spotlight","url":"https://www.gummicube.com/blog/the-wild-case-app-store-spotlight","website":"Gummicube"},
+  {"topic":"App Review","title":"Valiant Hearts: The Great War App Store Spotlight","url":"https://www.gummicube.com/blog/valiant-hearts-the-great-war-app-store-spotlight","website":"Gummicube"},
+  {"topic":"Aquatics","title":"5 Reasons Pond Water Changes Are Important","url":"https://www.thepondguy.com/learning-center/5-reasons-pond-water-changes-are-important/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Adding Pond Dye to Water Gardens","url":"https://www.thepondguy.com/learning-center/adding-pond-dye-to-water-gardens/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Aeration Improves Water Clarity & Reduces Muck","url":"https://www.thepondguy.com/learning-center/improve-water-clarity-reduce-muck/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Alternative Energy Pond Aeration Options","url":"https://www.thepondguy.com/learning-center/alternative-energy-pond-aeration-options/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Barley Straw for Pond and Water Garden Treatment","url":"https://www.thepondguy.com/learning-center/barley-straw-for-pond-and-water-garden-treatment/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Benefits of Aquatic Plants in a Water Garden","url":"https://www.thepondguy.com/learning-center/benefits-of-aquatic-plants-in-a-water-garden/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Can Koi Fish Get Sunburned?","url":"https://www.thepondguy.com/learning-center/can-koi-fish-get-sunburned/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Can You Over Aerate a Pond?","url":"https://www.thepondguy.com/learning-center/can-you-over-aerate-a-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Choosing Pond Fish Food","url":"https://www.thepondguy.com/learning-center/choosing-fish-food/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Do I Need Both Bacteria & Enzymes in My Pond?","url":"https://www.thepondguy.com/learning-center/do-i-need-to-use-both-bacteria-and-enzymes-in-my-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Do Pond Turtles Hibernate Like Fish?","url":"https://www.thepondguy.com/learning-center/do-pond-turtles-hibernate-in-the-winter-like-fish/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Do Pond Weeds Die in Winter?","url":"https://www.thepondguy.com/learning-center/do-pond-weeds-die-in-winter-or-should-i-continue-herbicidal-treatments/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Water Quality Tips for Bringing Koi Inside for Winter","url":"https://www.thepondguy.com/learning-center/do-you-have-any-water-quality-tips-for-bringing-koi-inside-for-the-winter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Do You Really Need to Add EcoBoost PRx?","url":"https://www.thepondguy.com/learning-center/do-you-really-need-to-add-ecoboost-what-is-the-best-way-to-apply-it/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Can I Do a Jar Test for Pond Water?","url":"https://www.thepondguy.com/learning-center/how-can-i-do-a-jar-test-for-pond-water/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Can I Prevent Ice Damage to Docks in Winter?","url":"https://www.thepondguy.com/learning-center/how-can-i-prevent-ice-damage-to-docks-in-winter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Can I Train My Koi Fish to Hand Feed?","url":"https://www.thepondguy.com/learning-center/my-friend-talks-about-her-fish-coming-up-to-eat-from-her-hand-how-can-i-get-my-fish-to-do-the-same/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Quick Pond Cleaning When You Can’t Do a Big Spring Cleanout","url":"https://www.thepondguy.com/learning-center/how-do-i-clean-my-pond-quickly-when-i-cant-do-a-big-springcleanout/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do I Control Pond Weeds After Herbicidal Treatments?","url":"https://www.thepondguy.com/learning-center/how-do-i-control-pond-weeds-that-return-after-herbicidal-treatments/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do I Keep Leaves Out of My Pond If It Is Too Large for a Net Cover?","url":"https://www.thepondguy.com/learning-center/how-do-i-keep-leaves-out-of-my-pond-if-it-is-too-large-for-a-net-cover/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Keeping Koi Fish Healthy & Preventing Diseases","url":"https://www.thepondguy.com/learning-center/how-do-i-keep-my-koi-fish-healthy-and-prevent-diseases/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do I Store Leftover Pond Supplies?","url":"https://www.thepondguy.com/learning-center/how-do-i-store-leftover-pond-supplies-like-natural-bacteria-for-next-year/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do I Use MuckAway Tablets?","url":"https://www.thepondguy.com/learning-center/how-do-i-use-muckaway-tablets/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Choose an Aeration Kit","url":"https://www.thepondguy.com/learning-center/how-to-choose-an-aeration-kit/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Install and Maintain Pond Lights","url":"https://www.thepondguy.com/learning-center/how-to-install-and-maintain-pond-lights/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Measure Your Pond for an Aeration System","url":"https://www.thepondguy.com/learning-center/how-to-measure-your-pond-for-an-aeration-system/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Send Us a Weed ID Photo","url":"https://www.thepondguy.com/learning-center/how-to-send-us-a-weed-id-photo/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Air Filter Still Not Pumping? Time for a Maintenance Kit?","url":"https://www.thepondguy.com/learning-center/i-changed-the-air-filter-on-my-compressor-but-its-still-not-pumping-much-air-is-it-time-for-a-maintenance-kit/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Best Net to Protect Pond From Leaves","url":"https://www.thepondguy.com/learning-center/i-need-a-net-to-protect-my-pond-from-leaves-which-one-works-the-best/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Upgrading Pond Filtration System Options","url":"https://www.thepondguy.com/learning-center/i-want-to-upgrade-my-pond-filtration-system-what-are-my-options/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Buying a House With a Half-acre Pond?","url":"https://www.thepondguy.com/learning-center/im-buying-a-house-with-a-halfacre-pond-what-do-i-need-to-know/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Ich Treatment for Fish","url":"https://www.thepondguy.com/learning-center/ich-treatment-for-fish/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Identify Types of Koi Fish in Your Water Garden","url":"https://www.thepondguy.com/learning-center/identify-types-of-koi-fish-in-your-water-garden/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Muck Control","url":"https://www.thepondguy.com/learning-center/muck-control/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Muck Reduction Study With MuckAway","url":"https://www.thepondguy.com/learning-center/muck-reduction-study-with-muckaway/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Easy Water Feature Suggestions","url":"https://www.thepondguy.com/learning-center/my-mom-wants-a-water-feature-but-needs-something-easy-to-maintain-any-suggestions/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Maintaining Good Water Quality Through Winter","url":"https://www.thepondguy.com/learning-center/my-water-quality-is-good-but-what-should-i-do-over-the-winter-to-keep-it-that-way/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Pond Plant Maintenance - Season by Season","url":"https://www.thepondguy.com/learning-center/pond-plant-maintenance-season-by-season/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Preventing Sick Fish","url":"https://www.thepondguy.com/learning-center/preventing-sick-fish/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Running Pond Aeration in Winter","url":"https://www.thepondguy.com/learning-center/continuing-pond-aeration-in-winter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Should I Build a Pond or a Pondless Feature?","url":"https://www.thepondguy.com/learning-center/should-i-build-a-pond-or-a-pondless-water-feature/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Spring Start-Up for Ponds & Lakes","url":"https://www.thepondguy.com/learning-center/spring-startup-for-ponds-lakes/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Dead Cattails & Phragmites Removal in Spring","url":"https://www.thepondguy.com/learning-center/there-are-dead-cattails-and-phragmites-everywhere-do-i-need-to-rake-them-out-once-the-ice-melts/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Water Clarity Study With PondClear","url":"https://www.thepondguy.com/learning-center/water-clarity-study-with-pondclear/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Water Feature Maintenance Tools","url":"https://www.thepondguy.com/learning-center/water-feature-maintenance-tools/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Helping an Injured Fish After a Heron Attack","url":"https://www.thepondguy.com/learning-center/what-can-i-do-to-help-an-injured-fish-that-a-heron-attacked/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Fountain Maintenance for Winter Shutdown","url":"https://www.thepondguy.com/learning-center/what-fountain-maintenance-do-you-recommend-for-winter-shutdown/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What Is the Airmax Ecosystem?","url":"https://www.thepondguy.com/learning-center/what-is-the-airmax-ecosystem/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"PondClear vs MuckAway Bacteria Treatments","url":"https://www.thepondguy.com/learning-center/what-is-the-difference-between-pondclear-and-muckaway-beneficial-bacteria-treatments/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Items to Remove From Pond Before Winter","url":"https://www.thepondguy.com/learning-center/what-items-need-to-come-out-of-my-pond-before-winter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"When Should I Start Feeding Fall Fish Food?","url":"https://www.thepondguy.com/learning-center/when-should-i-start-feeding-my-koi-fall-fish-food/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"When to Use Seasonal Defense in DefensePAC","url":"https://www.thepondguy.com/learning-center/when-should-i-start-using-the-seasonal-defense-in-my-defensepac/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Turning Off Pond Aerator for Winter Recreation","url":"https://www.thepondguy.com/learning-center/when-should-i-turn-off-my-pond-aerator-for-winter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Which DIY Pond Kit Should I Choose?","url":"https://www.thepondguy.com/learning-center/choosing-a-pond-kit/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Which Invasive Pond Weeds Return After Winter?","url":"https://www.thepondguy.com/learning-center/do-pond-weeds-stop-growing-during-the-winter-months/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Which Aeration System Is Right for My Pond","url":"https://www.thepondguy.com/learning-center/which-type-of-aeration-system-is-right-for-my-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Why Does Pond Water Level Drop Below Skimmer Opening?","url":"https://www.thepondguy.com/learning-center/why-does-the-water-level-in-my-pond-keep-dropping-below-my-skimmer-opening/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Winter Pond Pump Use","url":"https://www.thepondguy.com/learning-center/winter-pond-pump-use/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Freshwater Frogs of North America","url":"https://www.thepondguy.com/learning-center/freshwater-frogs-of-north-america/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Is Pond Algaecide Safe for Fish?","url":"https://www.thepondguy.com/learning-center/is-pond-algaecide-safe-for-fish/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Freshwater Turtles of North America","url":"https://www.thepondguy.com/learning-center/freshwater-turtles-of-north-america/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Much Does It Cost to Build a Koi Pond?","url":"https://www.thepondguy.com/learning-center/how-much-does-it-cost-to-build-a-koi-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Different Types of Pond Pumps Explained","url":"https://www.thepondguy.com/learning-center/different-types-of-pond-pumps-explained/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Spring-Fed Ponds","url":"https://www.thepondguy.com/learning-center/spring-fed-ponds/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Build a Koi Pond for Beginners","url":"https://www.thepondguy.com/learning-center/how-to-build-a-koi-pond-for-beginners/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Farm Crawfish","url":"https://www.thepondguy.com/learning-center/how-to-farm-crawfish/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Clear Murky Pond Water Naturally","url":"https://www.thepondguy.com/learning-center/how-to-clear-murky-pond-water-naturally/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What Creatures Live in Pond Ecosystems?","url":"https://www.thepondguy.com/learning-center/what-creatures-live-in-pond-ecosystems/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Which Plants Are Best for a Small Pond?","url":"https://www.thepondguy.com/learning-center/which-plants-are-best-for-a-small-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Does Copper Kill Algae?","url":"https://www.thepondguy.com/learning-center/how-does-copper-kill-algae/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do I Attract Frogs to My Backyard Pond?","url":"https://www.thepondguy.com/learning-center/how-do-i-attract-frogs-to-my-backyard-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Must-Have Inflatable Lake Toys for Summer Fun","url":"https://www.thepondguy.com/learning-center/musthave-inflatable-lake-toys-for-summer-fun/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Can I Get Rid of Pond Weeds Naturally? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-can-i-get-rid-of-pond-weeds-naturally/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Mechanical and Biological Filtration Explained - The Pond Guy","url":"https://www.thepondguy.com/learning-center/mechanical-and-biological-filtration-explained/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Aquatic Herbicides Work - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-aquatic-herbicides-work/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Mechanical Pond Weed Removal Tools - The Pond Guy","url":"https://www.thepondguy.com/learning-center/mechanical-pond-weed-removal-tools/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Build a Stormwater Retention Pond - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-to-build-a-stormwater-retention-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do I Make a Good Crayfish Habitat? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-do-i-make-a-good-crayfish-habitat/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Pond Water Testing - The Pond Guy","url":"https://www.thepondguy.com/learning-center/pond-water-testing/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Quarantine Fish in a Hospital Tank - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-to-quarantine-fish-in-a-hospital-tank/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What Are the Best Cold-Water Fish for My Lake? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/what-are-the-best-coldwater-fish-for-my-lake/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What Are Fun Lake Games for Kids to Play? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/what-are-fun-lake-games-for-kids-to-play/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What Wild Animals Do Ponds Attract? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/what-wild-animals-do-ponds-attract/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Tropical Greenhouse Fish Ponds - The Pond Guy","url":"https://www.thepondguy.com/learning-center/tropical-greenhouse-fish-ponds/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What is Thermal Stratification? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/what-is-thermal-stratification/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What is the Ideal pH Range for a Koi Pond? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/what-is-the-ideal-ph-range-for-a-koi-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Can I Build a Spring-Fed Pond on My Property? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/can-i-build-a-springfed-pond-on-my-property/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Can Koi Fish Live Without a Filter? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/can-koi-fish-live-without-a-filter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Surface Runoff Pollutes Your Aquatic Ecosystem - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-surface-runoff-pollutes-your-aquatic-ecosystem/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Will a pond increase my property value? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/will-a-pond-increase-my-property-value/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Do I Need a Pond Liner? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/do-i-need-a-pond-liner/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Why Does Algae Grow in Ponds? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/why-does-algae-grow-in-ponds/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Common Pond Weeds - The Pond Guy","url":"https://www.thepondguy.com/learning-center/common-pond-weeds/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Why Should I Add Artificial Pond Plants to My Pond? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/why-should-i-add-artificial-pond-plants-to-my-pond/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Natural Wildlife Ponds: Building and Maintenance - The Pond Guy","url":"https://www.thepondguy.com/learning-center/natural-wildlife-ponds-building-and-maintenance/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Is Hard or Soft Water Better for Fish? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/is-hard-or-soft-water-better-for-fish/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Selecting a Water Fountain Pump Kit - The Pond Guy","url":"https://www.thepondguy.com/learning-center/selecting-a-water-fountain-pump-kit/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Can I Grow Beneficial Bacteria for Ponds? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-can-i-grow-beneficial-bacteria-for-ponds/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Do You Have Tips for Building a DIY Backyard Fountain Using a Kit? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/do-you-have-tips-for-building-a-diy-backyard-fountain-using-a-kit/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Set Up Your Koi Pond for Vacation - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-to-set-up-your-koi-pond-for-vacation/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"What Is a Gravity Pond Filter? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/what-is-a-gravity-pond-filter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Can I Build My Own Pond Spitter? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-can-i-build-my-own-pond-spitter/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"The Importance of Fish Habitat Structures - The Pond Guy","url":"https://www.thepondguy.com/learning-center/the-importance-of-fish-habitat-structures/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How to Prevent Pond Weeds From Growing - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-to-prevent-pond-weeds-from-growing/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Do All Aquascape Need Filters? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/do-all-aquascape-need-filters/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Aquascaping for Beginners - The Pond Guy","url":"https://www.thepondguy.com/learning-center/aquascaping-for-beginners/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do Power House Ice Eater De-Icers Work? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-do-power-house-ice-eater-deicers-work/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Protecting Your Koi Pond in a Power Outage - The Pond Guy","url":"https://www.thepondguy.com/learning-center/protecting-your-koi-pond-in-a-power-outage/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Can I Use Pond Liner as a Weed Barrier? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/can-i-use-pond-liner-as-a-weed-barrier/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Why Are Ponds Important to the Environment? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/why-are-ponds-important-to-the-environment/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Algae Control in Restricted States - The Pond Guy","url":"https://www.thepondguy.com/learning-center/algae-control-in-restricted-states/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Do I Drag Weeds Out of My Lake? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-do-i-drag-weeds-out-of-my-lake/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Are My Fish Sick From a Nutrient Deficiency? - The Pond Guy","url":"https://www.thepondguy.com/learning-center/are-my-fish-sick-from-a-nutrient-deficiency/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"How Officials Control Harmful Algal Blooms (HABs) - The Pond Guy","url":"https://www.thepondguy.com/learning-center/how-officials-control-harmful-algal-blooms-habs/","website":"The Pond Guy"},
+  {"topic":"Aquatics","title":"Caring for Drought-Prone Ponds - The Pond Guy","url":"https://www.thepondguy.com/learning-center/caring-for-droughtprone-ponds/","website":"The Pond Guy"},
+  {"topic":"DIY","title":"Cricut Comparison: Complete Buyer's Guide and Comparison Chart","url":"https://www.thatsweettealife.com/cricut-deals-galore/","website":"That Sweet Tea Life"},
+  {"topic":"DIY","title":"How to Make Custom T-shirts at Home: 5 Ideas to Get You Started","url":"https://www.thatsweettealife.com/how-to-make-a-custom-tee-you-love/","website":"That Sweet Tea Life"},
+  {"topic":"DIY","title":"The Best Paint For Cabinets: Our Top Picks for 2023","url":"https://www.thatsweettealife.com/best-paint-for-cabinets/","website":"That Sweet Tea Life"},
+  {"topic":"Gardening","title":"11 Best Cherry Tomato Varieties","url":"https://minnetonkaorchards.com/best-cherry-tomato-varieties/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"11 Best Growing Tomatoes for New Gardeners","url":"https://minnetonkaorchards.com/best-growing-tomatoes/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"5 Important Facts About The Cactus Zinnia","url":"https://minnetonkaorchards.com/cactus-zinnia/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"5 Important Facts About The Magellan Zinnia","url":"https://minnetonkaorchards.com/magellan-zinnia/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"5 Things You Need to Create the Best Soil for Watermelon","url":"https://minnetonkaorchards.com/best-soil-for-watermelon/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"7 Kinds of Soybeans to Know About","url":"https://minnetonkaorchards.com/soybeans/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"All About Fanfare Cucumbers","url":"https://minnetonkaorchards.com/fanfare-cucumber/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"All About Indeterminate Tomatoes","url":"https://minnetonkaorchards.com/indeterminate-tomatoes/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"All About The Beefmaster Tomato","url":"https://minnetonkaorchards.com/beefmaster-tomato/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"All About The Better Bush Tomato","url":"https://minnetonkaorchards.com/better-bush-tomato/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"All About the Jersey Devil Tomato","url":"https://minnetonkaorchards.com/jersey-devil-tomato/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"All About The Patio Tomato","url":"https://minnetonkaorchards.com/patio-tomato/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Black Turtle Beans","url":"https://minnetonkaorchards.com/black-turtle-beans/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Burpless Beauty Cucumbers","url":"https://minnetonkaorchards.com/burpless-beauty-cucumber/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Chocolate Cherry Sunflower","url":"https://minnetonkaorchards.com/chocolate-cherry-sunflower/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Columnar Apple Tree Growing and Care","url":"https://minnetonkaorchards.com/columnar-apple-trees/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Everything You Need to Know About the Rio Red Grapefruit Tree","url":"https://minnetonkaorchards.com/rio-red-grapefruit-tree/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Grapefruit Watering Guide: What to Know About Watering Grapefruit Trees","url":"https://minnetonkaorchards.com/watering-grapefruit-trees/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Growing Up: The Benefits And Basics Of Raised Vegetable Gardens","url":"https://minnetonkaorchards.com/raised-vegetable-garden/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"How to Deadhead Zinnia in 3 Easy Steps","url":"https://minnetonkaorchards.com/deadhead-zinnia/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"How To Grow Roses From Seeds 3 Different Ways","url":"https://minnetonkaorchards.com/growing-roses-from-seed/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"How to Harvest Avocados in 3 Easy Steps","url":"https://minnetonkaorchards.com/how-to-harvest-avocados/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"How to Harvest Cantaloupe in 4 Easy Steps","url":"https://minnetonkaorchards.com/how-to-harvest-canteloupe/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"How to Harvest Tomatoes in 4 Easy Steps","url":"https://minnetonkaorchards.com/how-to-harvest-tomatoes/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"How to Harvest Zinnia Seeds: Everything You Need to Know","url":"https://minnetonkaorchards.com/how-to-harvest-zinnia-seeds/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"How to Start an Apple Orchard","url":"https://minnetonkaorchards.com/how-to-start-an-apple-orchard/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The 11 Best Large Tomato Varieties","url":"https://minnetonkaorchards.com/large-tomato-varieties/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The 18 Best Indeterminate Tomato Varieties","url":"https://minnetonkaorchards.com/indeterminate-tomato-varieties/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Allsweet Watermelon","url":"https://minnetonkaorchards.com/allsweet-watermelon-/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Benefits of Using a Silage Tarp","url":"https://minnetonkaorchards.com/silage-tarp/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Best Raised Bed Soil for Your Raised Garden Bed","url":"https://minnetonkaorchards.com/raised-bed-soil/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Complete Guide To container Tomatoes","url":"https://minnetonkaorchards.com/container-tomatoes/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Complete Guide to Crop Rotation","url":"https://minnetonkaorchards.com/crop-rotation/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Complete Guide to Growing Cucumbers","url":"https://minnetonkaorchards.com/growing-cucumbers/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Guide to Pruning Kumquats","url":"https://minnetonkaorchards.com/pruning-kumquat/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Honey Tangerine Tree","url":"https://minnetonkaorchards.com/honey-tangerine-tree/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Meiwa Kumquat","url":"https://minnetonkaorchards.com/meiwa-kumquat/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Triple Crown Watermelon","url":"https://minnetonkaorchards.com/triple-crown-watermelon/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"The Ultimate Guide to Growing Tomatoes Upside Down","url":"https://minnetonkaorchards.com/growing-tomatoes-upside-down/","website":"Minnetonka Orchards"},
+  {"topic":"Gardening","title":"Transplanting Avocado Trees","url":"https://minnetonkaorchards.com/transplanting-avocado-tree/","website":"Minnetonka Orchards"},
+  {"topic":"Insurance","title":"Best Renters Insurance in NYC (2022)","url":"https://www.usinsuranceagents.com/best-renters-insurance-in-nyc/","website":"US Insurance Agents"},
+  {"topic":"Insurance","title":"Is Primerica a pyramid scheme?","url":"https://www.lifeinsurancepost.com/is-primerica-a-pyramid-scheme/","website":"Life Insurance Post"},
+  {"topic":"Insurance","title":"eRenter Renters Insurance Review [2022]","url":"https://www.insuranceproviders.com/erenterplan-renters-insurance-review/","website":"Insurance Providers"},
+  {"topic":"Insurance","title":"Complete Guide to Non-Owner SR-22 Insurance","url":"https://www.fullcoverageautoinsurances.com/nonowner-sr-22-insurance/","website":"Full Coverage Auto Insurance"},
+  {"topic":"Insurance","title":"Ohio Mutual Insurance Review & Ratings (2022)","url":"https://www.freeadvice.com/uncategorized/ohio-mutual-insurance-review-ratings/","website":"Free Advice"},
+  {"topic":"Insurance","title":"Compare Life Insurance Companies That Don't Require an Insured Signature (2022)","url":"https://www.comparelifeinsurance.com/compare-life-insurance-companies-that-dont-require-an-insured-signature/","website":"Compare Life Insurance"},
+  {"topic":"Insurance","title":"Cheapest New York City Renters Insurance Companies (2022)","url":"https://clearsurance.com/blog/new-york-city-renters-insurance","website":"Clearsurance"},
+  {"topic":"Insurance","title":"All You Need To Know About the Safe Auto App (2022)","url":"https://www.carinsurancecompanies.com/all-you-need-to-know-about-the-safe-auto-app/","website":"Car Insurance Companies"},
+  {"topic":"Insurance","title":"AAA Membership: See if Your Rental Car Is Covered","url":"https://www.buyautoinsurance.com/aaa-membership-car-rental-insurance/","website":"Buy Auto Insurance"},
+  {"topic":"Insurance","title":"Find Affordable Auto Insurance with the Push of a Button","url":"https://www.bestliferates.org/uncategorized/find-affordable-auto-insurance-with-the-push-of-a-button/","website":"Best Life Rates"},
+  {"topic":"Insurance","title":"How to Find Your Car's Make and Model","url":"https://www.4autoinsurancequote.com/what-is-make-and-model-car/","website":"4Auto Insurance"},
+  {"topic":"News","title":"AI Grief","url":"https://nwu.org/ai-grief/","website":"National Writers Union"},
+  {"topic":"News","title":"App Analytics Metrics Updated","url":"https://www.gummicube.com/blog/app-analytics-metrics-updated","website":"Gummicube"},
+  {"topic":"News","title":"App Store - Antitrust Litigation Update","url":"https://www.gummicube.com/blog/app%20store%20antitrust%20litigation%20update","website":"Gummicube"},
+  {"topic":"News","title":"App Store Review Guidelines: June 2021 Updates","url":"https://www.gummicube.com/blog/app-store-review-guidelines-june-2021-updates","website":"Gummicube"},
+  {"topic":"News","title":"App Store Tax: Elon Musk Tweets","url":"https://www.gummicube.com/blog/app-store-tax-elon-musk-tweets","website":"Gummicube"},
+  {"topic":"News","title":"Apple Adds App Store Search Suggestions","url":"https://www.gummicube.com/blog/apple-adds-app-store-search-suggestions","website":"Gummicube"},
+  {"topic":"News","title":"Apple Event - California Streaming","url":"https://www.gummicube.com/blog/apple-event-california-streaming","website":"Gummicube"},
+  {"topic":"News","title":"Apple Updates Commission Policies","url":"https://www.gummicube.com/blog/apple-updates-commission-policies","website":"Gummicube"},
+  {"topic":"News","title":"AppTrackingTransparency Guideline Updates","url":"https://www.gummicube.com/blog/apptrackingtransparency-guideline-updates","website":"Gummicube"},
+  {"topic":"News","title":"AppTrackingTransparency: The Impact on Kids Apps","url":"https://www.gummicube.com/blog/apptrackingtransparency-the-impact-on-kids-apps","website":"Gummicube"},
+  {"topic":"News","title":"Google Antitrust Litigation","url":"https://www.gummicube.com/blog/google-antitrust-litigation-july-2021","website":"Gummicube"},
+  {"topic":"News","title":"Google Play Changes Coming in 2021","url":"https://www.gummicube.com/blog/google-play-changes-coming-in-2021","website":"Gummicube"},
+  {"topic":"News","title":"Google Play Changes On The Horizon","url":"https://www.gummicube.com/blog/google-play-changes-on-the-horizon","website":"Gummicube"},
+  {"topic":"News","title":"Google Play Ratings Changes","url":"https://www.gummicube.com/blog/google-play-ratings-changes","website":"Gummicube"},
+  {"topic":"News","title":"Google Play Safety Section","url":"https://www.gummicube.com/blog/google-play-safety-section","website":"Gummicube"},
+  {"topic":"News","title":"Google vs Epic Games","url":"https://www.gummicube.com/blog/google-vs-epic-games","website":"Gummicube"},
+  {"topic":"News","title":"iOS 14.5 - User Privacy and Apple Search Ads Changes","url":"https://www.gummicube.com/blog/ios-145-user-privacy-and-apple-search-ads-changes","website":"Gummicube"},
+  {"topic":"News","title":"iOS 15 In-App Events","url":"https://www.gummicube.com/blog/ios-15-in-app-events","website":"Gummicube"},
+  {"topic":"News","title":"iOS 15 Launches - Key ASO Updates","url":"https://www.gummicube.com/blog/ios-15-launches-key-aso-updates","website":"Gummicube"},
+  {"topic":"News","title":"Reviews & Ratings for Built-In iOS Apps","url":"https://www.gummicube.com/blog/reviews-and-ratings-for-built-in-ios-apps","website":"Gummicube"},
+  {"topic":"News","title":"Spotify Speaks Out on Apple","url":"https://www.gummicube.com/blog/spotify-speaks-out-on-apple","website":"Gummicube"},
+  {"topic":"News","title":"The Open App Markets Act","url":"https://www.gummicube.com/blog/the-open-app-markets-act","website":"Gummicube"},
+  {"topic":"News","title":"WWDC 2021: Key Updates","url":"https://www.gummicube.com/blog/wwdc-2021-key-updates","website":"Gummicube"},
+  {"topic":"News","title":"WWDC 2021: What to Expect","url":"https://www.gummicube.com/blog/WWDC-2021-What-To-Expect","website":"Gummicube"},
+  {"topic":"Outdoors","title":"6 Fantastic Uses for Wood Ashes in Survival Situations","url":"https://www.survivalworld.com/every-day-items/wood-ashes/","website":"Survival World"},
+  {"topic":"Outdoors","title":"9 Brilliant Uses for Shoelaces in Survival Situations","url":"https://www.survivalworld.com/every-day-items/shoe-laces/","website":"Survival World"},
+  {"topic":"Outdoors","title":"How to Prevent, Treat, and Identify Heat Rash","url":"https://www.survivalworld.com/first-aid/heat-rash/","website":"Survival World"},
+  {"topic":"Outdoors","title":"How to Tie the Adjustable Bend Knot","url":"https://www.survivalworld.com/knots/adjustable-bend/","website":"Survival World"},
+  {"topic":"Outdoors","title":"What Is a Straddle Trench Latrine? How to Make and Use a Straddle Trench Latrine","url":"https://www.survivalworld.com/hygiene-sanitation/straddle-trench/","website":"Survival World"},
+  {"topic":"Outdoors","title":"The best camping in west virginia","url":"https://www.lifeintheusa.com/west-virginia/best-camping-in-west-virginia","website":"Life in the USA"},
+  {"topic":"Outdoors","title":"The Best Trout Streams MN Offers","url":"https://www.lifeinminnesota.com/trout-streams-mn/","website":"Life in Minnesota"},
+  {"topic":"Outdoors","title":"The Complete MN Trout Season Fishing Guide","url":"https://www.lifeinminnesota.com/mn-trout-season/","website":"Life in Minnesota"},
+  {"topic":"Outdoors","title":"What is Wild Camping and How to Get Started","url":"https://www.beyondthetent.com/wild-camping/","website":"Beyond The Tent"},
+  {"topic":"Product Review","title":"Best Gaming Laptop Backpacks Of 2023","url":"https://www.thegamer.com/best-gaming-laptop-backpacks/","website":"TheGamer"},
+  {"topic":"Product Review","title":"Most Expensive Gaming Chairs Of 2023","url":"https://www.thegamer.com/most-expensive-gaming-chairs/","website":"TheGamer"},
+  {"topic":"Product Review","title":"The 4 Best Shower Bags for Outdoorsman","url":"https://www.survivalworld.com/hygiene-sanitation/best-shower-bag/","website":"Survival World"},
+  {"topic":"Product Review","title":"The 6 Best One Person Tents for 2023","url":"https://www.survivalworld.com/shelters/best-one-person-tent/","website":"Survival World"},
+  {"topic":"Product Review","title":"18 Gardening Gifts for Men They'll Love","url":"https://minnetonkaorchards.com/gardening-gifts-for-men/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"8 of the Best Long-Handled Weeding Tools to Make Gardening Life Easier!","url":"https://minnetonkaorchards.com/long-handled-weeding-tools/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The 11 Best Edging Shovels for Home Gardeners","url":"https://minnetonkaorchards.com/best-edging-shovel/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The 11 Best Garden Hoses For Backyard Gardening","url":"https://minnetonkaorchards.com/best-garden-hose/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The 6 Best Cherry Picking Tools for Cherry Harvesting","url":"https://minnetonkaorchards.com/cherry-picking-tool/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The 7 Best Cucumber Trellises","url":"https://minnetonkaorchards.com/cucumber-trellis/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The 7 Best Fruit Picking Baskets","url":"https://minnetonkaorchards.com/fruit-picking-basket","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The 9 Best Tomato Trellises","url":"https://minnetonkaorchards.com/best-tomato-trellis/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The Best Compost Machine for 2023","url":"https://minnetonkaorchards.com/best-compost-machine/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The Best Compost Spreader for 2023","url":"https://minnetonkaorchards.com/best-compost-spreader/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The Best Fertilizer for Apple Trees: 7 of the Top Fertilizers for Your Trees","url":"https://minnetonkaorchards.com/best-fertilizer-for-apple-trees/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The Best Fertilizer For Plum Trees: A Guide To Plum Tree Fertilizer","url":"https://minnetonkaorchards.com/fertilizer-for-plum-trees/","website":"Minnetonka Orchards"},
+  {"topic":"Product Review","title":"The 7 Best Ice Fishing Sleds for 2023","url":"https://www.lifeinminnesota.com/ice-fishing-sled/","website":"Life in Minnesota"},
+  {"topic":"Product Review","title":"Enjoy Fresh Water Everywhere With The Best RV Water Softeners","url":"https://www.beyondthetent.com/rv-water-softener/","website":"Beyond The Tent"},
+  {"topic":"Product Review","title":"The Best Camping Axe: Our Top 5 Picks","url":"https://www.beyondthetent.com/camping-axe/","website":"Beyond The Tent"},
+  {"topic":"Product Review","title":"The Best Camping Multi Tool: Our Top 5 Picks","url":"https://www.beyondthetent.com/camping-multi-tool/","website":"Beyond The Tent"},
+  {"topic":"Tattoos","title":"American Style Tattoos Explained","url":"https://inkspiredmagazine.com/american-style-tattoo/","website":"Inkspired Magazine"},
+  {"topic":"Travel","title":"11 Apple Orchards in Texas Worth Checking Out","url":"https://minnetonkaorchards.com/apple-orchards-in-texas/","website":"Minnetonka Orchards"},
+  {"topic":"Travel","title":"A Guide to Backpacking Europe","url":"https://medium.com/@AISOdog.freelance/a-guide-to-backpacking-europe-aff391b4698","website":"Medium"},
+  {"topic":"Travel","title":"Backpacking Europe Packing Essentials","url":"https://medium.com/@AISOdog.freelance/backpacking-europe-packing-essentials-64ca949b9da2","website":"Medium"},
+  {"topic":"Travel","title":"The 15 best aquariums in florida","url":"https://www.lifeintheusa.com/florida/best-aquariums-in-florida","website":"Life in the USA"},
+  {"topic":"Travel","title":"The best aquarium in california","url":"https://www.lifeintheusa.com/california/best-aquarium-in-california","website":"Life in the USA"},
+  {"topic":"Travel","title":"The best aquarium in texas","url":"https://www.lifeintheusa.com/texas/best-aquariums-in-texas","website":"Life in the USA"},
+  {"topic":"Travel","title":"The Best Beaches In Oregon","url":"https://www.lifeintheusa.com/oregon/best-beaches-in-oregon","website":"Life in the USA"},
+  {"topic":"Travel","title":"Hill Annex Mine State Park: How to Make the Most of Your Next Vacation","url":"https://www.lifeinminnesota.com/hill-annex-mine-state-park/","website":"Life in Minnesota"},
+  {"topic":"Travel","title":"Iron Range OHV State Recreation Area: Everything You Need to Know for a Fun Trip","url":"https://www.lifeinminnesota.com/iron-range-ohv-state-recreation-area/","website":"Life in Minnesota"},
+  {"topic":"Travel","title":"The Complete Visitor's Guide to Sakatah Lake State Park","url":"https://www.lifeinminnesota.com/sakatah-lake-state-park/","website":"Life in Minnesota"},
+  {"topic":"Travel","title":"The Definitive Visitor's Guide to Franz Jevne State Park","url":"https://www.lifeinminnesota.com/franz-jevne-state-park/","website":"Life in Minnesota"}
+  {"topic":"Travel","title":"10 Natural Wonders In The U.S. That Rival National Park Landmarks","url":"https://www.thetravel.com/natural-wonders-that-rival-national-parks/","website":"TheTravel"}
+];
+
+// build table body
+const tbody = document.querySelector("#copyTable tbody");
+copyData.forEach(item => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td>${item.topic}</td>
+    <td>${item.title}</td>
+    <td>${item.website}</td>
+    <td><a href="${item.url}" target="_blank">View</a></td>
+  `;
+  tbody.appendChild(tr);
+});
+
+// sorting logic
+const headers = document.querySelectorAll("th");
+let sortDirection = {};
+headers.forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.getAttribute("data-key");
+    sortDirection[key] = !sortDirection[key];
+    copyData.sort((a,b) => {
+      return sortDirection[key]
+        ? a[key].localeCompare(b[key])
+        : b[key].localeCompare(a[key]);
+    });
+    tbody.innerHTML = "";
+    copyData.forEach(item => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${item.topic}</td>
+        <td>${item.title}</td>
+        <td>${item.website}</td>
+        <td><a href="${item.url}" target="_blank">View</a></td>
+      `;
+      tbody.appendChild(tr);
+    });
+    headers.forEach(h => h.classList.remove("sort-asc","sort-desc"));
+    th.classList.add(sortDirection[key] ? "sort-asc" : "sort-desc");
+  });
+});
+
+// filter function
+function applyFilter() {
+  const term = document.getElementById("tableFilter").value.toLowerCase();
+  tbody.querySelectorAll("tr").forEach(row => {
+    row.style.display = Array.from(row.children)
+      .some(td => td.textContent.toLowerCase().includes(term))
+      ? "" : "none";
+  });
+}
+
+// nav toggle
+function myFunction() {
+  if (window.innerWidth >= 768) return true;
+  var x = document.getElementById("myLinks");
+  x.style.display = x.style.display === "block" ? "none" : "block";
+  return false;
+}
+window.addEventListener("resize", () => {
+  const x = document.getElementById("myLinks");
+  x.style.display = window.innerWidth >= 768 ? "flex" : "none";
+});
+</script>
+
+</body>
+</html>
